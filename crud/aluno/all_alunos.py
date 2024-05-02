@@ -1,8 +1,8 @@
-from bd import conn
+from connection.bd import conn
 
 cursor  = conn.cursor()
 
-cursor.execute("SELECT * FROM cursos WHERE nome_curso = 'Medicina'")
+cursor.execute("SELECT * FROM alunos")
 
 rows = cursor.fetchall()
 for row in rows:
